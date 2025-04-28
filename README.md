@@ -1,51 +1,59 @@
 
-# Project
+# morphogb
 
-**Project Name - Long version**
+**Glioblastoma stem cell morphotypes convey distinct cell states and clinically relevant functions**
 
-Template github repository that can be used e.g. for the publication of the code when submitting a paper. 
+This repository contains the code to reproduce the analysis presented in Barelli *et al.*, 
+"Glioblastoma stem cell morphotypes convey distinct cell states and clinically relevant functions".
 
-GH Actions are set to:
+## Transcriptomics Data Analysis with Nanostring GeoMX
 
-1. convert the ipynb to html, create an index html page and store all the pages in a separate branch, where they can be published as static website with github pages
-2. create a README index file for the repo that contains all the links to the html and ipynb files.
-
-Feel free to fork it for "publishing" your own notebooks, and [contact me](mailto:matteo.bonfanti@fht.org) with suggestions for improvements.
-
-
-An html version of the notebooks is accessible [here](https://matbonfanti.github.io/project-template/).
-
+The analysis was conducted using Python and various libraries. A complete environment for the 
+analysis is available in the Docker container `nfdata/workbench:sc-1.2.2`, which can be found on DockerHub.
+The relevant notebooks to reproduce the results and the figures of the article are contained in the 
+`geomx` folder. The analysis is based on the Nanostring GeoMX data, which is contained in the
+`geomx/data` folder.
 
 
-
-## Test Notebook
-
-Links: [jupyter notebook](prova.ipynb) and [html file](https://matbonfanti.github.io/project-template/prova.html).
-
-This is a **test notebook**. A very basic example of notebook, just to exemplify how the
-GitHub Actions defined in this repository work.
-
-If you want to add your own notebooks, just put the ipynb files in the root project folder and then
-customize the "pages" section of the [config.yaml](https://github.com/matbonfanti/project-template/blob/main/resources/config.yaml)
-file by including the notebooks that need to be indexed. The "notebook" attribute defines the name
-of the ipynb file and the "description" attribute contains a descriptive string that will be
-included in the README and html index.
+An html version of the notebooks is accessible [here](https://KalebicLab.github.io/morphogb/).
 
 
 
 
-## Test HTML File
+## Preliminary exploration of geomx dataset
 
-Links: [html file](https://matbonfanti.github.io/project-template/prova2.html).
+Links: [jupyter notebook](geomx/01_geomx_analysis.ipynb) and [html file](https://KalebicLab.github.io/morphogb/geomx/01_geomx_analysis.html).
 
-This is a **test HTML file**. This example shows how HTML files can be directly included in the 
-final repository and linked from the repository index.
+This notebook contains a preliminary exploration of the spatial transcriptomics data,
+including steps such as data loading, quality control, and exploratory dimensionality reduction.
 
 
 
-Here you can put some final remarks.
-These will be appended at the end of the README / index page.
 
+## Differential expression analysis
+
+Links: [jupyter notebook](geomx/02_geomx_differential_expression.ipynb) and [html file](https://KalebicLab.github.io/morphogb/geomx/02_geomx_differential_expression.html).
+
+This notebook focuses on the differential expression analysis of the spatial transcriptomics data,
+using PyDeseq2 for model definition and statistical testing. Differentially expressed genes are identified
+and then further anlyzed with Over Representation Analysis (ORA) and Gene Set Enrichemnt Analyses (GSEA) 
+to characterize their biological relevance.
+
+
+
+
+## Biolocal Pathway Deconvolution
+
+Links: [jupyter notebook](geomx/03_geomx_biolocal_pathway_deconvolution.ipynb) and [html file](https://KalebicLab.github.io/morphogb/geomx/03_geomx_biolocal_pathway_deconvolution.html).
+
+This notebook applies the Biolocal Pathway Deconvolution (BPD) method using the single-sample 
+Mann-Whitney-Wilcoxon Gene-Set Test (ss-MWWGST). This approach enables the characterization of 
+spatial transcriptomics data by assessing the enrichment of various gene set databases,
+while minimizing inter-patient variability.
+
+
+
+None
 
 ---
 *Note: this README file has been generated automatically.* <br>
