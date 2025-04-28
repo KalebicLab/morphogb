@@ -30,10 +30,10 @@ pages:
       and then further anlyzed with Over Representation Analysis (ORA) and Gene Set Enrichemnt Analyses (GSEA) 
       to characterize their biological relevance.
       
-  Biolocal Pathway Deconvolution:
+  Biological Pathway Deconvolution:
     notebook: "geomx/03_geomx_biolocal_pathway_deconvolution.ipynb"
     description: |
-      This notebook applies the Biolocal Pathway Deconvolution (BPD) method using the single-sample 
+      This notebook applies the Biological Pathway Deconvolution (BPD) method using the single-sample 
       Mann-Whitney-Wilcoxon Gene-Set Test (ss-MWWGST). This approach enables the characterization of 
       spatial transcriptomics data by assessing the enrichment of various gene set databases,
       while minimizing inter-patient variability.
