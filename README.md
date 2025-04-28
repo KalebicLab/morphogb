@@ -42,11 +42,11 @@ to characterize their biological relevance.
 
 
 
-## Biolocal Pathway Deconvolution
+## Biological Pathway Deconvolution
 
 Links: [jupyter notebook](geomx/03_geomx_biolocal_pathway_deconvolution.ipynb) and [html file](https://KalebicLab.github.io/morphogb/geomx/03_geomx_biolocal_pathway_deconvolution.html).
 
-This notebook applies the Biolocal Pathway Deconvolution (BPD) method using the single-sample 
+This notebook applies the Biological Pathway Deconvolution (BPD) method using the single-sample 
 Mann-Whitney-Wilcoxon Gene-Set Test (ss-MWWGST). This approach enables the characterization of 
 spatial transcriptomics data by assessing the enrichment of various gene set databases,
 while minimizing inter-patient variability.
