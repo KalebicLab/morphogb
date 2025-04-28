@@ -6,7 +6,7 @@
 This repository contains the code to reproduce the analysis presented in Barelli *et al.*, 
 "Glioblastoma stem cell morphotypes convey distinct cell states and clinically relevant functions".
 
-## Transcriptomics Data Analysis with Nanostring GeoMX
+### Transcriptomics Data Analysis with Nanostring GeoMX
 
 The analysis was conducted using Python and various libraries. A complete environment for the 
 analysis is available in the Docker container `nfdata/workbench:sc-1.2.2`, which can be found on DockerHub.
