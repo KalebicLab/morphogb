@@ -13,7 +13,7 @@ subtitle: |
   `geomx` folder. The analysis is based on the Nanostring GeoMX data, which is contained in the
   `geomx/data` folder.
 
-final:
+final: ""
 pages:
 
   Preliminary exploration of geomx dataset:
