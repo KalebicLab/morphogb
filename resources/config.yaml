@@ -31,7 +31,7 @@ pages:
       to characterize their biological relevance.
       
   Biological Pathway Deconvolution:
-    notebook: "geomx/03_biolocal_pathway_deconvolution.ipynb"
+    notebook: "geomx/03_biological_pathway_deconvolution.ipynb"
     description: |
       This notebook applies the Biological Pathway Deconvolution (BPD) method using the single-sample 
       Mann-Whitney-Wilcoxon Gene-Set Test (ss-MWWGST). This approach enables the characterization of 
